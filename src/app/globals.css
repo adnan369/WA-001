@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --grid-color: rgba(255, 69, 0, 0.15); /* Red-Orange subtle grid */
+}
+
+body {
+  background-color: #ffffff; /* Clean Light BG */
+  color: #0f172a;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Detroit Master Maths Grid Logic */
+.maths-grid {
+  background-size: 50px 50px; /* Medium Square Grid */
+  background-image:
+    linear-gradient(to right, var(--grid-color) 0.5px, transparent 0.5px),
+    linear-gradient(to bottom, var(--grid-color) 0.5px, transparent 0.5px);
+  background-attachment: fixed;
+}
+
+/* 20% Blur Translucent Card Effect */
+.detroit-glass {
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(12px); /* Smooth 20% visual blur */
+  -webkit-backdrop-filter: blur(12px);
+  border: 1.5px solid rgba(255, 69, 0, 0.1);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.05);
+}
+
+/* Bold Animated Selection */
+::selection {
+  background: #FF4500;
+  color: white;
+}
+
+/* Smooth Scrollbar Detroit Edition */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#FF0000, #FF8C00);
+  border-radius: 100px;
+}
